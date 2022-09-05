@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Front Api</title>
+</head>
+<body>
+    <header>
+        <h1>FRONT API</h1>
+    </header>
+    <main>
+        <section>
+            <h2>FORMULÁRIO DE CADASTRO DE USUÁRIOS</h2>
+            <p>Para inserir na lista preencha os dados abaixo.</p>
+            <form>
+                <input id="name__user" type="text" placeholder="Nome Completo">
+                <input id="email__user" type="text" placeholder="Email">
+                <input id="send__data" type="submit" class="button" value="Cadastrar">
+            </form>
+        </section>
+        <section>
+            <h2>LISTA DE USUÁRIOS CADASTRADOS</h2>
+            <p>Abaixo, você pode ver os usuários registrados, podendo editá-los ou remové-los.</p>
+            <table>
+                <thead>
+                    <th>#ID</th>
+                    <th>NOME</th>
+                    <th>E-MAIL</th>
+                    <th>EDITAR</th>
+                    <th>EXCLUIR</th>
+                </thead>
+                <tbody id="users__table">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <div id="modal" class="bg-modal">
+        <div class="modal">
+            <input id="change__name" type="text" placeholder="Nome Completo">
+            <input id="change__email" type="text" placeholder="Email">
+            <input id="confirm__changes" type="submit" class="button" value="Alterar">
+        </div>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "name": "api_restful_crud",
+  "version": "1.0.0",
+  "main": "server.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server.mjs localhost 3000"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
